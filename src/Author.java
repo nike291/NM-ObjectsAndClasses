@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Objects;
 
 public class Author {
@@ -7,14 +8,25 @@ public class Author {
 
     public Author(int id, String firstName, String lastName) {
         this.id = id;
+=======
+public class Author {
+
+    private String firstName;
+    private String lastName;
+
+    public Author(String firstName, String lastName) {
+>>>>>>> origin/NM-ObjectsAndClasses
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
+<<<<<<< HEAD
     public int getId() {
         return this.id;
     }
 
+=======
+>>>>>>> origin/NM-ObjectsAndClasses
     public String getFirstName() {
         return this.firstName;
     }
@@ -22,6 +34,7 @@ public class Author {
     public String getLastName() {
         return this.lastName;
     }
+<<<<<<< HEAD
 
     public String toString() {
         return "Автор" + id + ": " + firstName + " " + lastName;
@@ -38,4 +51,6 @@ public class Author {
     public int hashCode() {
         return Objects.hash(firstName);
     }
+=======
+>>>>>>> origin/NM-ObjectsAndClasses
 }

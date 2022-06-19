@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 import java.util.Objects;
 
 public class Book {
 
     private int id;
+=======
+public class Book {
+
+>>>>>>> origin/NM-ObjectsAndClasses
     private String title;
     private Author author;
     private int yearPublication;
 
+<<<<<<< HEAD
     public Book(int id, String title, Author author, int yearPublication) {
         this.id = id;
+=======
+    public Book(String title, Author author, int yearPublication) {
+>>>>>>> origin/NM-ObjectsAndClasses
         this.title = title;
         this.yearPublication = yearPublication;
         if (author.getFirstName().length() != 0 && author.getLastName().length() != 0) {
@@ -18,9 +27,12 @@ public class Book {
         }
     }
 
+<<<<<<< HEAD
     public int getId() {
         return this.id;
     }
+=======
+>>>>>>> origin/NM-ObjectsAndClasses
     public String getTitle() {
         return this.title;
     }
@@ -36,6 +48,7 @@ public class Book {
     public void setYearPublication(int yearPublication) {
         this.yearPublication = yearPublication;
     }
+<<<<<<< HEAD
 
     public String toString() {
         return "Книга" + id + ": " + title + " Автор: " + author.getFirstName() + " " + author.getLastName() + " Год публикации: " + yearPublication;
@@ -52,4 +65,6 @@ public class Book {
     public int hashCode() {
         return Objects.hash(title);
     }
+=======
+>>>>>>> origin/NM-ObjectsAndClasses
 }
