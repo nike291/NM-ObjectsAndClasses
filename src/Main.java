@@ -43,7 +43,7 @@ public class Main {
         System.out.println(" ");
 
         //Проверка метода hashCode
-        if (DaVinci.hashCodeFirstName() == Leonard.hashCodeFirstName() && DaVinci.hashCodeLastName() == Leonard.hashCodeLastName()) {
+        if (DaVinci.hashCode() == Leonard.hashCode()) {
             System.out.println("hash-коды авторов " + DaVinci.getId() + " и " + Leonard.getId() + " совпадают, автор возможно совпадает");
             System.out.println("Проверим equals методом:");
             if (DaVinci.equals(Leonard)) {
@@ -54,7 +54,7 @@ public class Main {
         } else {
             System.out.println("hash-коды авторов " + DaVinci.getId() + " и " + Leonard.getId() + " не совпадают, авторы не совпадают");
         }
-        if (Pustoi.hashCodeFirstName() == Leonard.hashCodeFirstName() && Pustoi.hashCodeLastName() == Leonard.hashCodeLastName()) {
+        if (Pustoi.hashCode() == Leonard.hashCode()) {
             System.out.println("hash-коды авторов " + Pustoi.getId() + " и " + Leonard.getId() + " совпадают, автор возможно совпадает");
             System.out.println("Проверим equals методом:");
             if (Pustoi.equals(Leonard)) {

@@ -24,10 +24,13 @@ public class Author {
         return this.lastName;
     }
 
+    @Override
     public String toString() {
         return "Автор" + id + ": " + firstName + " " + lastName;
     }
 
+
+    @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
@@ -36,11 +39,9 @@ public class Author {
         return (this.firstName.equals(author2.firstName) && this.lastName.equals(author2.lastName));
     }
 
-    public int hashCodeFirstName() {
-        return Objects.hash(firstName);
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName) + Objects.hash(lastName);
     }
 
-    public int hashCodeLastName() {
-        return Objects.hash(lastName);
-    }
 }

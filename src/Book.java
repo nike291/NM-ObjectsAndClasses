@@ -37,10 +37,12 @@ import java.util.Objects;
             this.yearPublication = yearPublication;
         }
 
+        @Override
         public String toString() {
             return "Книга" + id + ": " + title + " Автор: " + author.getFirstName() + " " + author.getLastName() + " Год публикации: " + yearPublication;
         }
 
+        @Override
         public boolean equals(Object other) {
             if (this.getClass() != other.getClass()) {
                 return false;
@@ -49,6 +51,7 @@ import java.util.Objects;
             return this.title.equals(bookBook.title);
         }
 
+        @Override
         public int hashCode() {
             return Objects.hash(title);
         }
